@@ -44,10 +44,15 @@ function timeToLaunch(){
     // Check number of hours until target
     hrs = Math.floor(sec/(60*60));
     sec = sec - hrs * 60*60;
-
+    
     // Check number of minutes until target
-    min = Math.floor(sec/(60));
-    sec = sec - min * 60;
+    min = pad( parseInt(Math.floor(sec/(60))));
+    sec = pad( parseInt(sec - min * 60));
+    
+}
+
+function pad(n) {
+  return (n < 10 ? '0' : '') + n;
 }
 
 /* --------------------------
