@@ -56,4 +56,30 @@ $(document).ready(function() {
   $('.full-map .close').click(function(){
     $('.full-map').removeClass('is-active');
   });
+
+  //Map slider
+  $('.map-detail.owl-carousel').owlCarousel({
+    margin: 10,
+    responsiveClass: true,
+    loop: true,
+    dots: true,
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    animateIn: 'fadeIn',
+    animateOut: 'fadeOut',
+    navText: ["<img src='img/arrow-left.png'  alt='' />","<img src='img/arrow-right.png'  alt='' />"],
+    responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 1,
+        },
+        1000: {
+          items: 1,
+        }
+    }
+  });
+
 });
