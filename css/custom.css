@@ -5,3 +5,9 @@
 .map a:hover:before {
     transform: rotate(0);
 }
+
+@media only screen and (max-width: 600px) {
+    .full-map .group img {
+        max-height: 360px;
+    }
+}
