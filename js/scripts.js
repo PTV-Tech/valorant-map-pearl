@@ -2,8 +2,8 @@ $(document).ready(function() {
   
   //Water effect
   $(".swiper-slide, .group-video,.group-image-text, .footer-bottom").ripples({
-    resolution: 700,
-    perturbance: 0.08,
+    resolution: 100,
+    perturbance: 0.04,
   });
 
   //Map
@@ -63,7 +63,7 @@ $(document).ready(function() {
     responsiveClass: true,
     loop: true,
     dots: true,
-    nav: false,
+    nav: true,
     autoplay: true,
     autoplayTimeout: 3000,
     animateIn: 'fadeIn',
@@ -80,6 +80,14 @@ $(document).ready(function() {
           items: 1,
         }
     }
+  });
+
+  //Close youtube
+  $('.modal-video').on('hidden.bs.modal', function (e) {
+    var $this = $(this).find('iframe'),
+            tempSrc = $this.attr('src');
+    $this.attr('src', "");
+    $this.attr('src', tempSrc);
   });
 
 });
