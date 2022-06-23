@@ -3,7 +3,7 @@ $(document).ready(function() {
   //Water effect
   $(".swiper-slide, .group-video,.group-image-text, .footer-bottom").ripples({
     resolution: 100,
-    perturbance: 0.04,
+    perturbance: 0.08,
   });
 
   //Map
