@@ -15,3 +15,11 @@
 .full-map .group .close {
     right: 9.125rem;
 }
+
+.map a:before {
+    transform: rotate(180deg);
+}
+
+.map a:hover:before {
+    transform: rotate(0);
+}
