@@ -2,6 +2,10 @@
     .full-map .group img {
         max-height: 360px;
     }
+
+    .full-map .group .close {
+        right: 3.125rem !important;
+    }
 }
 
 .full-map .group img {
