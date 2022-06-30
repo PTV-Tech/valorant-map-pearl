@@ -23,3 +23,10 @@
 .map a:hover:before {
     transform: rotate(0);
 }
+
+@media screen and (max-width: 991px) {
+    .video-section {
+        background: url(../img/bg_mobile_2.jpeg) no-repeat top;
+        background-size: cover;
+    }
+}
